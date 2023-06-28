@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --blue: #00b8b8; 
+    --black: #000000; 
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: .2rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+*::-webkit-scrollbar {
+    height: 5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+section{
+    padding: 7rem 2rem;
+}
+
+.heading{
+    text-align:center ;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.link-btn{
+    display: inline-block;
+    padding:1rem 3rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+} 
+
+.link-btn:hover{
+    background-color:var(--black);
+    color:var(--white);
+}
+
+.header-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    border-bottom: var(--border);
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+}
+
+.header-fixed-top .active{
+    background-color: var(--white );
+    box-shadow: var(--box-shadow);
+    border: 0;
+}
+
+.header-fixed-top .logo {
+    font-size: 2.0rem;
+    color: black !important;
+}
+
+.header-fixed-top .logo span {
+    color: var(--blue); 
+}
+
+.header-fixed-top .nav a{
+    margin:0 1rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.header-fixed-top .nav a:hover{
+    color: var(--blue);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+
+.home{
+    background: url(https://img.freepik.com/free-photo/dentist-with-dentistry-tools-isolated_1303-13186.jpg?w=1380&t=st=1687832359~exp=1687832959~hmac=f9b485865465983c0805bc4ec9b6f4bc908670c849fe0aa667e54906f0dcf253);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    width: 55rem; 
+    padding: 2rem;  
+}
+
+.home .content h3{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: var(--black);
+
+}
+
+.home .content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding:1rem 0 ;
+}
+
+.about .row{
+    min-height: 50vh;
+}
+
+.about .content span{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+.about .content p{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color:var(--light-color) ;
+    line-height: 2;
+}
+
+.services{
+    background-color: var(--light-bg);
+    
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services .box-container .box1{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.service .box-container .box1 h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.service .box-container .box1 p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+
+}
+  
+.box1 {
+    margin: 10px;
+  }
+.box1 img {
+    width: 50px;
+    height: 50px;
+  }
+
+.process .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.process .box-container .box2{
+    background-color: var(--blue);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.process .box-container .box2 img{
+    height: 20rem;
+    margin: 1rem 0;
+}
+
+.process ,.box-container .box2 h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1.5rem 0;
+}
+
+.process .box-container .box2 p{
+    font-size: 1.5rem;
+    color: var(--white);
+    line-height: 2;
+}
+
+
+
+
+
+
+  .box2 {
+    margin: 10px;
+  }
+.box2 img {
+    width: 250px;
+    height: 225px;
+    opacity: 0.9;
+  }
+
+.reviews{
+    background-color: var(--light-bg);
+}
+
+.reviews .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+}
+
+.reviews .box-container .box3{
+    background-color: var(--white);
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+
+.reviews .box-container .box3 img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.reviews .box-container .box3 p{
+    padding: 2rem 0;
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 0;
+}
+
+.reviews .box-container .box3 .stars{
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.reviews .box-container .box3 .stars i{
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.reviews .box-container .box3 h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .box-container .box3 span{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+
+  .box3 img {
+    width: 125px;
+    height: 100px;
+    
+  }
+
+
+
+
+
+
+.contact form{
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding:2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.contact form .message{
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    padding: 1.2rem 1rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    text-align: center;
+}
+
+
+.contact form .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.contact form span{
+    font-size: 1.7rem;
+    color: var(--black);
+
+}
+
+.footer{
+    background-color: var(--light-bg);
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box{
+    text-align: center;
+}
+    
+.footer .box-container .box i{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-transform: none;
+    line-height: 2;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: var(--border);
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    padding-bottom: 2rem;
+}
+
+.footer .credit span {
+    color: var(--blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries*/
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header .link-btn{
+        display: none;
+    }
+
+    section{
+        padding: 5rem 2rem;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .home {
+      background-image: url(https://img.freepik.com/fotos-gratis/dentista-feminina-com-ferramentas-de-odontologia-isolado_1303-13189.jpg?w=1380&t=st=1687989994~exp=1687990594~hmac=83b4bfd5f98a04a284293434b89588b94812bf6ced271c33bba80cc160d95f20);
+      background-size: 720px;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+  }
+
+@media (max-width:768px){
+   
+    section{
+        padding: 2rem 1rem;
+    }
+   
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header-fixed-top .nav{
+        position: absolute;
+        top: 10%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        padding: 1rem 0;
+        text-align: center;
+        flex-flow: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    .header-fixed-top .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header-fixed-top .nav a{
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+    .home .content{
+        width: auto;
+    }
+
+
+}
+
+@media (max-width:450px){
+
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
